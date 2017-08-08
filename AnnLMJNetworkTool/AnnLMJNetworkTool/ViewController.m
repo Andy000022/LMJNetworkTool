@@ -65,8 +65,7 @@
 
 - (void)testAction {
     
-    [AnnLiuNetworking getWithUrl:@"4/news/before/20131119" params:nil Cache:NO refreshCache:YES success:^(id responseObj) {
-        
+    [AnnLiuNetworking getWithUrl:@"4/news/before/20131119" params:nil Cache:NO refreshCache:YES showHUD:nil success:^(id responseObj) {
         self.projectListArr = [ProjectModle mj_objectArrayWithKeyValuesArray:responseObj[@"stories"]];
         
         self.contentL.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.projectListArr.count];
@@ -74,14 +73,11 @@
         [_table reloadData];
         
         [AnnLSVPHUD showSuccessWithStatus:@"加载成功"];
-//        [AnnLSVPHUD showLodingWithStatus:@""];
-//        [AnnLSVPHUD showInfoWithStatus:@""];
-//        [AnnLSVPHUD showErrorWithStatus:@""];
-//        [AnnLSVPHUD showProgress:0.5 Status:@""];
         
     } fail:^(NSError *error) {
         
     }];
+    
     
 }
 

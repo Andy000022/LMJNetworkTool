@@ -28,51 +28,54 @@ typedef enum {
 }
 
 + (void)showSuccessWithStatus:(NSString *)status {
-    [self LMJProgressHUDShowWithType:HUDTypeSuccess Status:status Image:nil Progress:NSNotFound];
+    [self LMJShowWithType:HUDTypeSuccess Status:status Image:nil Progress:NSNotFound];
 }
 
 + (void)showErrorWithStatus:(NSString *)status {
-    [self LMJProgressHUDShowWithType:HUDTypeError Status:status Image:nil Progress:NSNotFound];
+    [self LMJShowWithType:HUDTypeError Status:status Image:nil Progress:NSNotFound];
 }
 
 + (void)showLodingWithStatus:(NSString *)status {
-    [self LMJProgressHUDShowWithType:HUDTypeLoding Status:status Image:nil Progress:NSNotFound];
+    [self LMJShowWithType:HUDTypeLoding Status:status Image:nil Progress:NSNotFound];
 }
 
 + (void)showInfoWithStatus:(NSString *)status {
-    [self LMJProgressHUDShowWithType:HUDTypeInfo Status:status Image:nil Progress:NSNotFound];
+    [self LMJShowWithType:HUDTypeInfo Status:status Image:nil Progress:NSNotFound];
 }
 
 + (void)showProgress:(CGFloat)progress Status:(NSString *)status {
-    [self LMJProgressHUDShowWithType:HUDTypeProgress Status:status Image:nil Progress:progress];
+    [self LMJShowWithType:HUDTypeProgress Status:status Image:nil Progress:progress];
 }
 
 + (void)dismissHUD {
     [SVProgressHUD dismiss];
 }
 
-
 // 私有方法
-+ (void)LMJProgressHUDShowWithType:(HUDType)type Status:(NSString *)status Image:(UIImage *)img Progress:(CGFloat)progress {
++ (void)LMJShowWithType:(HUDType)type Status:(NSString *)status Image:(UIImage *)img Progress:(CGFloat)progress {
+    
     switch (type) {
+            
         case HUDTypeSuccess:
             [SVProgressHUD showSuccessWithStatus:status];
             break;
         case HUDTypeError:
             [SVProgressHUD showErrorWithStatus:status];
             break;
-        case HUDTypeInfo:
-            [SVProgressHUD showInfoWithStatus:status];
-            break;
         case HUDTypeLoding:
             [SVProgressHUD showWithStatus:status];
+            break;
+        case HUDTypeInfo:
+            [SVProgressHUD showInfoWithStatus:status];
             break;
         case HUDTypeProgress:
             [SVProgressHUD showProgress:progress status:status];
             break;
+            
         default:
             break;
     }
+
 }
 
 @end

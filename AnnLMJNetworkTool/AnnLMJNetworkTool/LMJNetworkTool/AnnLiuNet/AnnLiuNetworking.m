@@ -168,22 +168,22 @@ static AnnLIuAPIClient *Ann_sharedManager = nil;
 //get请求不带提示
 +(AnnURLSessionTask *)getWithUrl:(NSString *)url params:(NSDictionary *)params Cache:(BOOL)cache refreshCache:(BOOL)refreshCache success:(AnnResponseSuccess)success fail:(AnnResponseFail)fail
 {
-    return [self Ann_requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:NO showHUD:nil httpMethod:1 params:params progress:nil success:success fail:fail];
+    return [self requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:NO showHUD:nil httpMethod:1 params:params progress:nil success:success fail:fail];
 }
 //get请求带提示
 +(AnnURLSessionTask *)getWithUrl:(NSString *)url params:(NSDictionary *)params Cache:(BOOL)cache refreshCache:(BOOL)refreshCache showHUD:(NSString *)statusText success:(AnnResponseSuccess)success fail:(AnnResponseFail)fail
 {
-    return [self Ann_requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:YES showHUD:statusText httpMethod:1 params:params progress:nil success:success fail:fail];
+    return [self requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:YES showHUD:statusText httpMethod:1 params:params progress:nil success:success fail:fail];
 }
 //post请求不带提示
 +(AnnURLSessionTask *)postWithUrl:(NSString *)url params:(NSDictionary *)params Cache:(BOOL)cache refreshCache:(BOOL)refreshCache success:(AnnResponseSuccess)success fail:(AnnResponseFail)fail
 {
-    return [self Ann_requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:NO showHUD:nil httpMethod:2 params:params progress:nil success:success fail:fail];
+    return [self requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:NO showHUD:nil httpMethod:2 params:params progress:nil success:success fail:fail];
 }
 //post请求带提示
 +(AnnURLSessionTask *)postWithUrl:(NSString *)url params:(NSDictionary *)params Cache:(BOOL)cache refreshCache:(BOOL)refreshCache showHUD:(NSString *)statusText success:(AnnResponseSuccess)success fail:(AnnResponseFail)fail
 {
-    return [self Ann_requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:YES showHUD:statusText httpMethod:1 params:params progress:nil success:success fail:fail];
+    return [self requestWithUrl:url Cache:cache refreshCache:refreshCache isShowHUD:YES showHUD:statusText httpMethod:1 params:params progress:nil success:success fail:fail];
 }
 
 +(AnnURLSessionTask *)uploadWithImage:(UIImage *)image url:(NSString *)url filename:(NSString *)filename name:(NSString *)name mimeType:(NSString *)mimeType parameters:(NSDictionary *)parameters progress:(AnnUploadProgress)progress success:(AnnResponseSuccess)success fail:(AnnResponseFail)fail
@@ -421,7 +421,7 @@ static AnnLIuAPIClient *Ann_sharedManager = nil;
     return session;
 }
 
-+ (AnnURLSessionTask *)Ann_requestWithUrl:(NSString *)url
++ (AnnURLSessionTask *)requestWithUrl:(NSString *)url
                                   Cache:(BOOL)cache
                            refreshCache:(BOOL)refreshCache
                               isShowHUD:(BOOL)isShowHUD
