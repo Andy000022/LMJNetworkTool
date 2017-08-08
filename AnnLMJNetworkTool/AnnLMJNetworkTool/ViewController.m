@@ -74,6 +74,10 @@
         [_table reloadData];
         
         [AnnLSVPHUD showSuccessWithStatus:@"加载成功"];
+//        [AnnLSVPHUD showLodingWithStatus:@""];
+//        [AnnLSVPHUD showInfoWithStatus:@""];
+//        [AnnLSVPHUD showErrorWithStatus:@""];
+//        [AnnLSVPHUD showProgress:0.5 Status:@""];
         
     } fail:^(NSError *error) {
         
