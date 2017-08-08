@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D523DC8E1F394D1100D3278D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DC8D1F394D1100D3278D /* main.m */; };
+		D523DC911F394D1100D3278D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DC901F394D1100D3278D /* AppDelegate.m */; };
+		D523DC941F394D1100D3278D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DC931F394D1100D3278D /* ViewController.m */; };
+		D523DC971F394D1100D3278D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D523DC951F394D1100D3278D /* Main.storyboard */; };
+		D523DC991F394D1100D3278D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D523DC981F394D1100D3278D /* Assets.xcassets */; };
+		D523DC9C1F394D1100D3278D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D523DC9A1F394D1100D3278D /* LaunchScreen.storyboard */; };
+		D523DCBC1F394DE200D3278D /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCB61F394DE200D3278D /* HomeViewCell.m */; };
+		D523DCBD1F394DE200D3278D /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D523DCB71F394DE200D3278D /* HomeViewCell.xib */; };
+		D523DCBE1F394DE200D3278D /* ProjectModle.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCBB1F394DE200D3278D /* ProjectModle.m */; };
+		D523DCCA1F39582300D3278D /* AnnLIuAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCC11F39582300D3278D /* AnnLIuAPIClient.m */; };
+		D523DCCB1F39582300D3278D /* AnnLiuCachesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCC31F39582300D3278D /* AnnLiuCachesHelper.m */; };
+		D523DCCC1F39582300D3278D /* AnnLiuNetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCC51F39582300D3278D /* AnnLiuNetConfig.m */; };
+		D523DCCD1F39582300D3278D /* AnnLiuNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCC71F39582300D3278D /* AnnLiuNetworking.m */; };
+		D523DCCE1F39582300D3278D /* AnnLSVPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D523DCC91F39582300D3278D /* AnnLSVPHUD.m */; };
+		F11F90C75181F19217ACE761 /* libPods-AnnLMJNetworkTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA140B65E739C8A6F5DA0D8 /* libPods-AnnLMJNetworkTool.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EA140B65E739C8A6F5DA0D8 /* libPods-AnnLMJNetworkTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnnLMJNetworkTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1B779900ACFFB280BA59A2 /* Pods-AnnLMJNetworkTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnLMJNetworkTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnnLMJNetworkTool/Pods-AnnLMJNetworkTool.release.xcconfig"; sourceTree = "<group>"; };
+		75FE48E425AC137F5EB72004 /* Pods-AnnLMJNetworkTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnnLMJNetworkTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnnLMJNetworkTool/Pods-AnnLMJNetworkTool.debug.xcconfig"; sourceTree = "<group>"; };
+		D523DC891F394D1100D3278D /* AnnLMJNetworkTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnnLMJNetworkTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D523DC8D1F394D1100D3278D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D523DC8F1F394D1100D3278D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D523DC901F394D1100D3278D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D523DC921F394D1100D3278D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D523DC931F394D1100D3278D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D523DC961F394D1100D3278D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D523DC981F394D1100D3278D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D523DC9B1F394D1100D3278D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D523DC9D1F394D1100D3278D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D523DCB51F394DE200D3278D /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
+		D523DCB61F394DE200D3278D /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
+		D523DCB71F394DE200D3278D /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		D523DCB81F394DE200D3278D /* LMJMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJMacros.h; sourceTree = "<group>"; };
+		D523DCB91F394DE200D3278D /* NetWorkPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkPrefixHeader.pch; sourceTree = "<group>"; };
+		D523DCBA1F394DE200D3278D /* ProjectModle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectModle.h; sourceTree = "<group>"; };
+		D523DCBB1F394DE200D3278D /* ProjectModle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectModle.m; sourceTree = "<group>"; };
+		D523DCC01F39582300D3278D /* AnnLIuAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnLIuAPIClient.h; sourceTree = "<group>"; };
+		D523DCC11F39582300D3278D /* AnnLIuAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnLIuAPIClient.m; sourceTree = "<group>"; };
+		D523DCC21F39582300D3278D /* AnnLiuCachesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnLiuCachesHelper.h; sourceTree = "<group>"; };
+		D523DCC31F39582300D3278D /* AnnLiuCachesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnLiuCachesHelper.m; sourceTree = "<group>"; };
+		D523DCC41F39582300D3278D /* AnnLiuNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnLiuNetConfig.h; sourceTree = "<group>"; };
+		D523DCC51F39582300D3278D /* AnnLiuNetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnLiuNetConfig.m; sourceTree = "<group>"; };
+		D523DCC61F39582300D3278D /* AnnLiuNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnLiuNetworking.h; sourceTree = "<group>"; };
+		D523DCC71F39582300D3278D /* AnnLiuNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnLiuNetworking.m; sourceTree = "<group>"; };
+		D523DCC81F39582300D3278D /* AnnLSVPHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnLSVPHUD.h; sourceTree = "<group>"; };
+		D523DCC91F39582300D3278D /* AnnLSVPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnLSVPHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D523DC861F394D1100D3278D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11F90C75181F19217ACE761 /* libPods-AnnLMJNetworkTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A78D478CD9509FCA25368D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75FE48E425AC137F5EB72004 /* Pods-AnnLMJNetworkTool.debug.xcconfig */,
+				6A1B779900ACFFB280BA59A2 /* Pods-AnnLMJNetworkTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0E3112105303BCA1A80C17B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EA140B65E739C8A6F5DA0D8 /* libPods-AnnLMJNetworkTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D523DC801F394D1100D3278D = {
+			isa = PBXGroup;
+			children = (
+				D523DC8B1F394D1100D3278D /* AnnLMJNetworkTool */,
+				D523DC8A1F394D1100D3278D /* Products */,
+				01A78D478CD9509FCA25368D /* Pods */,
+				D0E3112105303BCA1A80C17B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D523DC8A1F394D1100D3278D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D523DC891F394D1100D3278D /* AnnLMJNetworkTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D523DC8B1F394D1100D3278D /* AnnLMJNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				D523DCBF1F39582300D3278D /* LMJNetworkTool */,
+				D523DC8F1F394D1100D3278D /* AppDelegate.h */,
+				D523DC901F394D1100D3278D /* AppDelegate.m */,
+				D523DC921F394D1100D3278D /* ViewController.h */,
+				D523DC931F394D1100D3278D /* ViewController.m */,
+				D523DC951F394D1100D3278D /* Main.storyboard */,
+				D523DC981F394D1100D3278D /* Assets.xcassets */,
+				D523DC9A1F394D1100D3278D /* LaunchScreen.storyboard */,
+				D523DC9D1F394D1100D3278D /* Info.plist */,
+				D523DCB51F394DE200D3278D /* HomeViewCell.h */,
+				D523DCB61F394DE200D3278D /* HomeViewCell.m */,
+				D523DCB71F394DE200D3278D /* HomeViewCell.xib */,
+				D523DCB81F394DE200D3278D /* LMJMacros.h */,
+				D523DCB91F394DE200D3278D /* NetWorkPrefixHeader.pch */,
+				D523DCBA1F394DE200D3278D /* ProjectModle.h */,
+				D523DCBB1F394DE200D3278D /* ProjectModle.m */,
+				D523DC8C1F394D1100D3278D /* Supporting Files */,
+			);
+			path = AnnLMJNetworkTool;
+			sourceTree = "<group>";
+		};
+		D523DC8C1F394D1100D3278D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D523DC8D1F394D1100D3278D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D523DCBF1F39582300D3278D /* LMJNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				D523DCC01F39582300D3278D /* AnnLIuAPIClient.h */,
+				D523DCC11F39582300D3278D /* AnnLIuAPIClient.m */,
+				D523DCC21F39582300D3278D /* AnnLiuCachesHelper.h */,
+				D523DCC31F39582300D3278D /* AnnLiuCachesHelper.m */,
+				D523DCC41F39582300D3278D /* AnnLiuNetConfig.h */,
+				D523DCC51F39582300D3278D /* AnnLiuNetConfig.m */,
+				D523DCC61F39582300D3278D /* AnnLiuNetworking.h */,
+				D523DCC71F39582300D3278D /* AnnLiuNetworking.m */,
+				D523DCC81F39582300D3278D /* AnnLSVPHUD.h */,
+				D523DCC91F39582300D3278D /* AnnLSVPHUD.m */,
+			);
+			path = LMJNetworkTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D523DC881F394D1100D3278D /* AnnLMJNetworkTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D523DCA01F394D1100D3278D /* Build configuration list for PBXNativeTarget "AnnLMJNetworkTool" */;
+			buildPhases = (
+				0340CEC2E2F67CE3CC16A3BA /* [CP] Check Pods Manifest.lock */,
+				D523DC851F394D1100D3278D /* Sources */,
+				D523DC861F394D1100D3278D /* Frameworks */,
+				D523DC871F394D1100D3278D /* Resources */,
+				4397B087958F123CA989A56B /* [CP] Embed Pods Frameworks */,
+				B4DCC64852CC02E861A92CD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnnLMJNetworkTool;
+			productName = AnnLMJNetworkTool;
+			productReference = D523DC891F394D1100D3278D /* AnnLMJNetworkTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D523DC811F394D1100D3278D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = nothing;
+				TargetAttributes = {
+					D523DC881F394D1100D3278D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D523DC841F394D1100D3278D /* Build configuration list for PBXProject "AnnLMJNetworkTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D523DC801F394D1100D3278D;
+			productRefGroup = D523DC8A1F394D1100D3278D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D523DC881F394D1100D3278D /* AnnLMJNetworkTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D523DC871F394D1100D3278D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D523DC9C1F394D1100D3278D /* LaunchScreen.storyboard in Resources */,
+				D523DCBD1F394DE200D3278D /* HomeViewCell.xib in Resources */,
+				D523DC991F394D1100D3278D /* Assets.xcassets in Resources */,
+				D523DC971F394D1100D3278D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0340CEC2E2F67CE3CC16A3BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4397B087958F123CA989A56B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnnLMJNetworkTool/Pods-AnnLMJNetworkTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4DCC64852CC02E861A92CD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnnLMJNetworkTool/Pods-AnnLMJNetworkTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D523DC851F394D1100D3278D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D523DCCC1F39582300D3278D /* AnnLiuNetConfig.m in Sources */,
+				D523DC941F394D1100D3278D /* ViewController.m in Sources */,
+				D523DCCE1F39582300D3278D /* AnnLSVPHUD.m in Sources */,
+				D523DCCD1F39582300D3278D /* AnnLiuNetworking.m in Sources */,
+				D523DCCB1F39582300D3278D /* AnnLiuCachesHelper.m in Sources */,
+				D523DC911F394D1100D3278D /* AppDelegate.m in Sources */,
+				D523DCCA1F39582300D3278D /* AnnLIuAPIClient.m in Sources */,
+				D523DCBC1F394DE200D3278D /* HomeViewCell.m in Sources */,
+				D523DCBE1F394DE200D3278D /* ProjectModle.m in Sources */,
+				D523DC8E1F394D1100D3278D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D523DC951F394D1100D3278D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D523DC961F394D1100D3278D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D523DC9A1F394D1100D3278D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D523DC9B1F394D1100D3278D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D523DC9E1F394D1100D3278D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D523DC9F1F394D1100D3278D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D523DCA11F394D1100D3278D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FE48E425AC137F5EB72004 /* Pods-AnnLMJNetworkTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = AnnLMJNetworkTool/NetWorkPrefixHeader.pch;
+				INFOPLIST_FILE = AnnLMJNetworkTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chat.chat.AnnLMJNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D523DCA21F394D1100D3278D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1B779900ACFFB280BA59A2 /* Pods-AnnLMJNetworkTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = AnnLMJNetworkTool/NetWorkPrefixHeader.pch;
+				INFOPLIST_FILE = AnnLMJNetworkTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chat.chat.AnnLMJNetworkTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D523DC841F394D1100D3278D /* Build configuration list for PBXProject "AnnLMJNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D523DC9E1F394D1100D3278D /* Debug */,
+				D523DC9F1F394D1100D3278D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D523DCA01F394D1100D3278D /* Build configuration list for PBXNativeTarget "AnnLMJNetworkTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D523DCA11F394D1100D3278D /* Debug */,
+				D523DCA21F394D1100D3278D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D523DC811F394D1100D3278D /* Project object */;
+}
